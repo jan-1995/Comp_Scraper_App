@@ -1,0 +1,6 @@
+pandas
+streamlit
+folium
+pybase64
+requests
+plotly_express
