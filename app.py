@@ -7,7 +7,7 @@ import io
 import base64
 import folium
 import pydeck as pdk
-import plost
+
 
 # with open ('style.css') as f:
 
