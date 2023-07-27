@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
-API_KEY='97fcae0b-41e4-4588-9361-0675ba8348d7'
+API_KEY='a45d27d3-5b49-448d-9959-c3950744a918'
 import requests
 import io
 import base64
@@ -48,7 +48,7 @@ if user_input is not None and user_input !="":
         
         data = listing_response.json()['data']['cat1']['searchResults']['mapResults']
         df = pd.json_normalize(data)
-        st.dataframe(df)
+        
         df['price']=df['hdpData.homeInfo.price']
         df['price']=df['price'].astype(str)
         df['price']=df['price'].str.replace(',','')
@@ -64,7 +64,7 @@ if user_input is not None and user_input !="":
         #####################################
         #              METRICS              #
         #####################################
-        st.markdown("## Property Metrics 🏙️")
+        st.markdown("<h1 style='text-align: center; color: black;'>Property Metrics 🏙️</h1>", unsafe_allow_html=True)
         col1, col2, col3 = st.columns([1,1,1])
 
 
@@ -78,6 +78,7 @@ if user_input is not None and user_input !="":
         with col3:
           col3.metric('Avg ', "{:,}".format(int(df['LOT_ACREAGE'].mean())), 
           help='Average Lot Acreage of properties in search')
+
           
 
 
@@ -87,7 +88,7 @@ if user_input is not None and user_input !="":
         with st.expander('Charts', expanded=True):
           st.markdown("## Charts 📈")
 
-          c1,c2, c3, c4=st.columns(4)
+          c1,c2, c3, c4, c5=st.columns(5)
           fig_a = px.box(df, x="price", title="Price Box Plot Chart")
           c1.plotly_chart(fig_a, use_container_width=True)
 
@@ -99,6 +100,9 @@ if user_input is not None and user_input !="":
 
           fig_d = px.histogram(df, x="LOT_ACREAGE", title="Lots Distribution by size in the county")
           c4.plotly_chart(fig_d, use_container_width=True)
+
+          with c5:
+             st.dataframe(df,width=500) 
 
           st.title("Map Plot with Streamlit")
           
