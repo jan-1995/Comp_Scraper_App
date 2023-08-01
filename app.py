@@ -12,7 +12,7 @@ import pydeck as pdk
 #            HOME PAGE              #
 #####################################
 st. set_page_config(layout="wide")
-user_input=st.text_input('Enter Here')
+user_input=st.text_input(label="Please Enter",placeholder='Paste your Zillow Link Here', help="Enter your zillow link")
 css = """
     <style>
         body {
@@ -23,7 +23,7 @@ css = """
 st.markdown(css, unsafe_allow_html=True)
 
 if user_input==None:
-    st.write("Please provide a Zillow Listings Page link to proceed.")
+    st.write("Please provide a link to proceed")
 
 # if user_input is not None and user_input !="":
 if user_input is not None and user_input !="":
@@ -128,7 +128,7 @@ if user_input is not None and user_input !="":
     #     # Call the function to download the CSV file
     #       download_csv(df)
     except KeyError:
-        st.write("No data found for the provided link. Please check the link and try again.")
+        a=6
 
 
     def download_csv(df):
@@ -145,7 +145,9 @@ if user_input is not None and user_input !="":
           # Call the function to download the CSV file
           download_csv(df)
       except KeyError:
-          st.write("No data found for the provided link. Please check the link and try again.")
+         a=10
+
+          # st.write("No data found for the provided link. Please check the link and try again.")
 
 
 
