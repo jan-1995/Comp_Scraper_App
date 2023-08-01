@@ -8,10 +8,19 @@ import base64
 import folium
 import pydeck as pdk
 
+
+
 #####################################
 #            HOME PAGE              #
 #####################################
 st. set_page_config(layout="wide")
+hide_streamlit_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True) 
 user_input=st.text_input(label="Please Enter",placeholder='Paste your Zillow Link Here', help="Enter your zillow link")
 css = """
     <style>
