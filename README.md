@@ -6,7 +6,7 @@
 
 Welcome to the **Comp Scraper App**! This application is designed to efficiently scrape competitor data from various online sources, allowing businesses to stay updated with their competitors' pricing, products, and promotions. This tool leverages web scraping techniques to collect and analyze data, providing valuable insights for strategic decision-making.
 
-![Web Scraping](https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Web_Scraping.png/800px-Web_Scraping.png)
+![Web Scraping]([https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Web_Scraping.png/800px-Web_Scraping.png](https://d1pnnwteuly8z3.cloudfront.net/images/4d5bf260-c3d0-4f21-b718-8ede8d4ca716/febf9de6-8a5a-4055-b274-e685485496f5.jpeg))
 
 ## Table of Contents
 
