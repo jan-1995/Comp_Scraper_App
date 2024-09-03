@@ -38,8 +38,8 @@ The project is organized as follows:
 ```bash
 ├── .streamlit
 │   └── [config.toml](.streamlit/config.toml)
-├── [EDA.ipynb](EDA.ipynb)
-├── [README.md](README.md)
-├── [app.py](app.py)
-├── [data.csv](data.csv)
-├── [requirements.txt](requirements.txt)
+├── [EDA.ipynb]
+├── [README.md]
+├── [app.py]
+├── [data.csv]
+├── [requirements.txt]
