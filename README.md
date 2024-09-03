@@ -43,3 +43,32 @@ The project is organized as follows:
 ├── [app.py]
 ├── [data.csv]
 ├── [requirements.txt]
+```
+
+## Installation
+
+To get started with the **Comp Scraper App**, you need to clone the repository and install the necessary Python packages. Follow these steps:
+
+1. **Clone the repository:**
+
+    ```bash
+    git clone https://github.com/jan-1995/Comp_Scraper_App.git
+    cd Comp_Scraper_App
+    ```
+
+2. **Install the dependencies:**
+
+    Install the required Python packages using `pip`:
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+## Usage
+
+To run the app and start scraping competitor data, use the following command:
+
+```bash
+streamlit run app.py
+
+
