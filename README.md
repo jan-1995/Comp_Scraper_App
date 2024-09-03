@@ -36,15 +36,10 @@ In today's competitive market, staying ahead requires businesses to constantly m
 The project is organized as follows:
 
 ```bash
-├── Comp_Scraper_App
-│   ├── static
-│   │   ├── [styles.css](static/styles.css)
-│   ├── templates
-│   │   ├── [index.html](templates/index.html)
-│   ├── [app.py](app.py)
-│   ├── [scraper.py](scraper.py)
-│   ├── [requirements.txt](requirements.txt)
-│   ├── [config.py](config.py)
-│   ├── [utils.py](utils.py)
-│   └── .gitignore
-└── README.md
+├── .streamlit
+│   └── [config.toml](.streamlit/config.toml)
+├── [EDA.ipynb](EDA.ipynb)
+├── [README.md](README.md)
+├── [app.py](app.py)
+├── [data.csv](data.csv)
+├── [requirements.txt](requirements.txt)
